@@ -1,5 +1,5 @@
 .row
-  .col-xs-12.col-md-6
+  .col-sm-6.col-md-4.col-md-offset-4
     = form_for @bill, html: {class: 'form-horizontal', role: 'form', multipart: true} do |form|
       = form.text_field :amount, placeholder: 'Cantidad', class: 'form-control'
       = form.collection_select :client_id, Client.order(:name),:id,:name, {prompt: 'Select a Client'}, { class: 'form-control' }
