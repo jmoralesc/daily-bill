@@ -4,11 +4,11 @@ class InstalmentsController < ApplicationController
     @instalments =
     if params[:filter]
       Instalment.
-        where("date = ?", params[:filter].to_date).
-        order('date')
+        where("created_at >= ? AND created_at <= ?", params[:filter].to_date.beginning_of_day,
+          params[:filter].to_date.end_of_day)
     else
       Instalment.
-        where("date = ?", Date.today)
+        where("created_at >= ? AND created_at <= ?", DateTime.now.beginning_of_day, DateTime.now.end_of_day)
     end
   end
 

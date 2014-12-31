@@ -4,5 +4,5 @@
       = form.collection_select :client_id, Client.order(:name),:id,:name, {prompt: 'Select a Client'}, { id: 'cselection', class: 'form-control' }
       = form.collection_select :bill_id, [],:id,:amount, {prompt: 'Select a Bill'}, { id: 'bselection', class: 'form-control bill-selection'}
       = form.text_field :amount, placeholder: 'Cantidad', class: 'form-control'
-      = form.text_field :date, class: "form-control filter-input", id: "adate", :autocomplete => :off, placeholder: "Filter"
+      / = form.text_field :date, class: "form-control filter-input", id: "adate", :autocomplete => :off, placeholder: "Filter"
       = form.submit "Create" , class: 'btn btn-default'
