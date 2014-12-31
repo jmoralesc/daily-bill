@@ -6,9 +6,9 @@ class BillsController < ApplicationController
   def create
     @bill = Bill.create(bill_params)
     if @bill.save
-      redirect_to new_bill_path, notice: 'Success'
+      redirect_to new_bill_path, notice: 'Contrata creada exitosamente!'
     else
-      redirect_to :back, notice: 'There was a problem'
+      redirect_to :back, notice: 'Hubo un problema!'
     end
   end
 

@@ -10,9 +10,9 @@ class ClientsController < ApplicationController
   def create
     @client = Client.create(client_params)
     if @client.save
-      redirect_to new_client_path, notice: 'Success'
+      redirect_to new_client_path, notice: 'Cliente creado exitosamente!'
     else
-      redirect_to :back, notice: 'There was a problem'
+      redirect_to :back, notice: 'Hubo un problema!'
     end
   end
 

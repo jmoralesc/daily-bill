@@ -19,9 +19,9 @@ class InstalmentsController < ApplicationController
   def create
     @instalment = Instalment.create(instalment_params)
     if @instalment.save
-      redirect_to root_path, notice: 'Success'
+      redirect_to root_path, notice: 'Abono creado exitosamente!'
     else
-      redirect_to :back, notice: 'There was a problem'
+      redirect_to :back, notice: 'Hubo un error!'
     end
   end
 

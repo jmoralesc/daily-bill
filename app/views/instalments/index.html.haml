@@ -3,9 +3,9 @@
     = render partial: 'filter', locals: { instalments: @instalments }
     %table.table.table-striped
       %tr
-        %th Client
-        %th Bill
-        %th Amount
+        %th Cliente
+        %th Contrata
+        %th Cantidad
       - @instalments.each do |instalment|
         %tr
           %td= instalment.client.name if instalment.client
