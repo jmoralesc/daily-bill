@@ -12,5 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+//= require bootstrap
+//= require bootstrap-filestyle
+//= require food_place
+//= bootstrap-modalmanager
+//= require jquery.raty
+//= require jquery.raty.min
+//= require bootstrap-datepicker
+//= requiere_tree.

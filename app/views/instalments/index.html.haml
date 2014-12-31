@@ -1,0 +1,18 @@
+.row
+  .col-xs-12.col-md-6
+    = render partial: 'filter', locals: { instalments: @instalments }
+    %table.table.table-striped
+      %tr
+        %th Client
+        %th Bill
+        %th Amount
+      - @instalments.each do |instalment|
+        %tr
+          %td= instalment.client.name if instalment.client
+          %td= instalment.bill.amount if instalment.bill
+          %td= instalment.amount
+      %tr
+        %th
+        %th Total
+        %td
+          = get_total(@instalments)

@@ -13,9 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20141229213900) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "bills", force: true do |t|
     t.integer  "amount"
     t.date     "given_at"
@@ -34,6 +31,7 @@ ActiveRecord::Schema.define(version: 20141229213900) do
     t.integer  "amount"
     t.date     "date"
     t.integer  "bill_id"
+    t.integer  "client_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -4,6 +4,7 @@ class CreateInstalments < ActiveRecord::Migration
       t.integer :amount
       t.date :date
       t.integer :bill_id
+      t.integer :client_id
 
       t.timestamps
     end

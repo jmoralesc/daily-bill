@@ -1,0 +1,16 @@
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= link_to 'Daily Bills', root_path, {class: 'navbar-brand'} %>
+      <%= link_to 'Clients', new_client_path, {class: 'navbar-brand'} %>
+      <%= link_to 'Bills', new_bill_path, {class: 'navbar-brand'} %>
+    </div>
+  </div>
+</nav>
+<%= render 'shared/flash_message' %>

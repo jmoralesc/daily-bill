@@ -1,0 +1,6 @@
+.panel.panel-default
+  .panel-body
+    - @clients.each do |client|
+      = client.name
+      - client.bills.each do |bill|
+        = bill.amount

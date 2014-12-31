@@ -20,4 +20,67 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  actions: Actions
+  sign_out: Sign out
+  food_place_saved: Food place saved
+  food_place_not_saved: Food place not saved
+  food_places: Food places
+  name: Name
+  phone_number: Phone number
+  edit: Edit
+  delete:  Delete
+  general_information: General information
+  address: Address
+  time: Time
+  address1: Address 1
+  address2: Address 2
+  state: State
+  city: City
+  edit_food_place: Edit food place
+  new_food_place: New food place
+  menu_option_saved: Menu option saved
+  menu_option_not_saved: Menu option not saved
+  new_menu_option: New menu option
+  edit_menu_option: Edit menu option
+  price: Price
+  menu_options: Menu Options
+  order_saved: Order saved
+  order_not_saved: Order not saved
+  new_order: New order
+  edit_order: Edit order
+  menu_line_item_saved: Menu line item saved
+  menu_line_item_not_saved: Menu line item not saved
+  quantity: Quantity
+  menu_line_item: Menu line item
+  view: View
+  new_food_place: New food place 
+  order_now: Order now >>
+  food_place: Food place
+  taco_manager: Taco Manager
+  location: Location
+  menu: Menu
+  place_new_order: Place new order!
+  sing_in: Sign in
+  sing_up: Sign up
+  password: Password
+  password_confirmation: Password confirmation
+  choose_restaurant: Choose food place
+  subtotal: Subtotal
+  order_details: Order details
+  invite_friends: Invite friends
+  all: All
+  my_orders: My orders
+  date: Date
+  total: Total
+  status: Status
+  login: Login   
+  username: Username
+  email: Email
+  send_me_reset_password_instructions: Send me reset password instructions
+  forgot_your_password: Forgot your password?
+  current_password: Current password
+  unhappy: Unhappy?
+  resend_confirmation_instructions: Resend confirmation instructions
+  rating: Rating
+  thumbnails: Thumbnails
+  list: List

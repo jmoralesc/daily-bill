@@ -1,0 +1,5 @@
+$('#bselection').empty();
+$('#bselection').append( $('<option>Select a Bill</option>'));
+<% @bills.each do |bill| %>
+  $('#bselection').append($('<option value="<%= bill.id %>"><%= bill.amount %></option>'));
+<% end %>
