@@ -3,4 +3,5 @@
     = form_for @bill, html: {class: 'form-horizontal', role: 'form', multipart: true} do |form|
       = form.text_field :amount, placeholder: 'Cantidad', class: 'form-control'
       = form.collection_select :client_id, Client.order(:name),:id,:name, {prompt: 'Elige un cliente'}, { class: 'form-control' }
+      = form.text_field :given_at, class: "form-control filter-input", id: "adate", :autocomplete => :off, placeholder: "Fecha"
       = form.submit "Crear" , class: 'btn btn-default'

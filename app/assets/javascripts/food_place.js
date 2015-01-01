@@ -14,11 +14,11 @@ $(document).ready(function() {
     autoclose: true,
     format: "yyyy/mm/dd"
   });
-  // $('#adate').datepicker({
-  //   language: "es",
-  //   autoclose: true,
-  //   format: "yyyy/mm/dd"
-  // });
+  $('#adate').datepicker({
+    language: "es",
+    autoclose: true,
+    format: "yyyy/mm/dd"
+  });
   $('#filter-date').on('changeDate', function() {
     $('#filter-form').submit();
   });

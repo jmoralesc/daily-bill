@@ -14,6 +14,6 @@ class BillsController < ApplicationController
 
   private
     def bill_params
-      params.require(:bill).permit(:amount, :client_id)
+      params.require(:bill).permit(:amount, :client_id, :given_at)
     end
 end
