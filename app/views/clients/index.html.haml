@@ -1,8 +1,10 @@
 .row
   .col-sm-6.col-md-4.col-md-offset-4
-  .panel.panel-default
-    .panel-body
+    %table.table.table-striped
+      %tr
+        %th Nombre
       - @clients.each do |client|
-        = client.name
-        - client.bills.each do |bill|
-          = bill.amount
+        %tr
+          %td= client.name
+
+= link_to 'Nuevo Cliente', new_client_path, {class: 'btn btn-primary', role: 'button'}
